@@ -16,9 +16,6 @@ data_cleaned = data.dropna(subset=columns_to_check)
 x = data_cleaned[['Living_area']]  # Feature (independent variable)
 y = data_cleaned['Selling_price']  # Target (dependent variable)
 
-# Split the data into training and testing sets
-# X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
-
 # Create and fit the linear regression model
 model = LinearRegression()
 model.fit(x, y)
